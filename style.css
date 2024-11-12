@@ -1,0 +1,152 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body{
+    background: #f5f5f5;
+    color: #0f0f0f;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+header{
+    background-color: #333;
+    color: #f5f5f5;
+    padding: 20px;
+    text-align: center;
+}
+
+header button{
+    margin-top: 10px;
+    padding: 10px 20px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: #f5f5f5;
+    color: #333;
+    font-weight: bold;
+}
+
+section{
+    padding: 20px;
+    margin: 20px auto;
+    height: 100vh;
+}
+
+div{
+    width: 50%;
+}
+
+img{
+    height: 400px;
+}
+
+p{
+    margin-top: 10px;
+}
+
+a{
+    color: #27294b;
+}
+
+#sobre{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+h2{
+    margin-bottom: 10px;
+    font-size: 4em;
+}
+
+
+
+
+.projeto{
+    background-color: #eaeaea;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    width: 40%;
+    height: 200px;
+    border: black solid;
+}
+
+#p1::before{
+    content: "Projeto I";
+    color: orangered;
+}
+#p2::before{
+    content: "Projeto II";
+    color: orangered;
+}
+#p3::before{
+    content: "Projeto III";
+    color: orangered;
+}
+#p4::before{
+    content: "Projeto IV";
+    color: orangered;
+}
+
+/*------------MODO ESCURO------------*/
+
+.dark-theme{
+    background: #141414;
+    color: #f5f5f5;
+}
+
+.dark-theme header{
+    background-color: #222;
+}
+
+.dark-theme header button{
+    background-color: #444;
+    color: #f5f5f5;
+}
+
+.dark-theme .projeto{
+    background-color: #1b1b1b;
+    border: orangered solid 2px;
+}
+
+.dark-theme a{
+    color: #ffffff;
+}
+
+@media screen and (max-width: 480px){
+    section{
+        width: 100%
+    }
+
+    img{
+        width: 100%;
+    }
+
+    #sobre{
+        flex-direction: column-reverse;
+    }
+
+    div{
+        width: 100%;
+    }
+
+    #projetos{
+        width: 100%;
+    }
+
+    .projeto{
+        width: 100%;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+    h2{
+        font-size: 2.5em;
+        text-align: center;
+    }
+
+}
